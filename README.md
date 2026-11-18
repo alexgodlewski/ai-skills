@@ -12,6 +12,12 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [outcome-first](claude/outcome-first) | Asks you the right questions about the finished result before Claude builds anything, then builds it in one go | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/outcome-first-skill.md) |
 | [google-ads](claude/google-ads) | Type `/google-ads` and your website: Ad Library Scraper, Ad Writer and Keyword Tool, plus where to move your budget | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/google-ads-skill.md) |
 | [youtube-skill](claude/youtube-skill) | Watches any YouTube video, playlist or podcast and turns what it teaches into a skill it keeps forever | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/youtube-skill.md) |
+| [humanizer](claude/humanizer) | Rewrites your text so it does not sound like AI: removes the AI patterns and writes in your own voice | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/humanizer-skill.md) |
+| [first-skill](claude/first-skill) | Builds your first skill with you: do one daily task together, and Claude saves it so tomorrow you just say run | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/first-skill-skill.md) |
+| [agents](claude/agents) | Tells you exactly what to build with a big team of Claude agents for your business, with the prompt for each | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/agents-skill.md) |
+| [animate](claude/animate) | Turns a voice note into an animated 9:16 explainer video with captions, no camera needed | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/animate-skill.md) |
+| [lead-finder](claude/lead-finder) | Type `/lead-finder` and your website: finds people on social media who need what you sell, writes their pains and objections in their own words, and drafts the outreach | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/lead-finder-skill.md) |
+| [leads](claude/leads) | Type `/leads` and any website: pulls and ranks the leads that fit your ideal customer, then writes the emails in your voice and drafts them in Gmail. Includes a copywriter and a humanizer | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/leads-skill.md) |
 
 ### For ChatGPT
 
