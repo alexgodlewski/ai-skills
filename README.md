@@ -43,7 +43,7 @@ Skills are on ChatGPT Business, Enterprise and Edu, and rolling out to more plan
 2. Open the Claude desktop app, click the **Code** tab, drag the file in and type **set this up**. Claude installs it and tells you when it is ready.
 3. Use it: type **/** and the skill's name, for example `/search yourbusiness.com`.
 
-Using Claude in the browser instead? Download the skill's `-claude.zip` from the [latest release](https://github.com/alexgodlewski/ai-skills/releases/latest) (for example `search-claude.zip`) and upload it under Settings, Capabilities, Skills.
+Using Claude in the browser instead? search, outcome-first and google-ads also come as a zip in the [latest release](https://github.com/alexgodlewski/ai-skills/releases/latest) (for example `search-claude.zip`): upload it under Settings, Capabilities, Skills. The other Claude skills need the Code tab.
 
 ## What is inside each skill
 
