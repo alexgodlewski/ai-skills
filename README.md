@@ -18,6 +18,11 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [animate](claude/animate) | Turns a voice note into an animated 9:16 explainer video with captions, no camera needed | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/animate-skill.md) |
 | [lead-finder](claude/lead-finder) | Type `/lead-finder` and your website: finds people on social media who need what you sell, writes their pains and objections in their own words, and drafts the outreach | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/lead-finder-skill.md) |
 | [leads](claude/leads) | Type `/leads` and any website: pulls and ranks the leads that fit your ideal customer, then writes the emails in your voice and drafts them in Gmail. Includes a copywriter and a humanizer | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/leads-skill.md) |
+| [buyer-panel](claude/buyer-panel) | Type `/buyer-panel` and your offer: a Board of 3 advisors, a CFO that checks your margin, and 20 simulated buyers who say buy or not buy, so you test an idea before you spend a dollar | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/buyer-panel-skill.md) |
+| [meta-ads](claude/meta-ads) | Type `/meta-ads` and your website: Ad Library Scraper, Ad Writer and Creative Tool. Finds the ads your competitors have run the longest in the Meta Ad Library, then writes yours and the image briefs | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/meta-ads-skill.md) |
+| [captions](claude/captions) | Type `/captions` and your talking head video: captions that go behind your head and stay out of Instagram's button zones, built with HyperFrames | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/captions-skill.md) |
+| [llm-wiki](claude/llm-wiki) | Run it once on Claude's memory: sorts your CLAUDE.md, notes and memory files into a wiki with a table of contents Claude reads first, so it stops guessing. Based on Karpathy's LLM Wiki | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/llm-wiki-skill.md) |
+| [presell-audit](claude/presell-audit) | Checks your posts and scripts for pre-selling (one desire, failed attempts, blocking beliefs), quotes the weak lines, rewrites them and gives you 5 post ideas that pre-sell | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/presell-audit-skill.md) |
 
 ### For ChatGPT
 
@@ -26,6 +31,15 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [outcome-first](chatgpt/outcome-first) | Asks you the right questions about the finished result before it builds anything, then builds it in one go | [Download zip](https://github.com/alexgodlewski/ai-skills/releases/latest/download/outcome-first.zip) |
 | [search](chatgpt/search) | Checks how AI search sees your business, finds what is missing, and writes the fixes | [Download zip](https://github.com/alexgodlewski/ai-skills/releases/latest/download/search.zip) |
 | [google-ads](chatgpt/google-ads) | Competitor ad finder, ad writer and keyword tool, plus where to move your budget | [Download zip](https://github.com/alexgodlewski/ai-skills/releases/latest/download/google-ads.zip) |
+
+### Free guides
+
+| Guide | What you get |
+|---|---|
+| [ai-brain-fry](guides/ai-brain-fry) | 4 rules for using AI without frying your brain, with every study linked (one page PDF) |
+| [outreach-numbers](guides/outreach-numbers) | The sheet to track every outreach number (Excel and CSV) and what each one tells you to fix |
+| [claude-weekend](guides/claude-weekend) | One weekend, five steps to use Claude better than most people, with the 50 About Me questions (PDF) |
+| [reel-machine](guides/reel-machine) | How Claude makes and schedules ten reels a day, with the exact prompts |
 
 ## How to install
 
