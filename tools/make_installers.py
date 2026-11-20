@@ -50,6 +50,31 @@ SKILLS = {
         pitch="Find out why your content gets views but not buyers. Paste your last posts or scripts and `/presell-audit` scores each one on three things: one single desire, the frustrations your buyer already tried, and the beliefs that stop them buying. It quotes the weak lines, rewrites them, and gives you 5 post ideas that pre-sell. Made for coaches and service businesses.",
         use="> /presell-audit\n\nThen paste your last 5 to 20 posts, scripts or captions, plus a few lines about your offer.",
     ),
+    "confirm-page": dict(
+        title="Confirm Page Skill",
+        pitch="Your lead books a call, then looks you up. This skill builds the page they land on, so they show up ready to buy. It writes the full page copy and layout, the proof sections with slots for your real proof, and the videos to record with a script outline for each. It also gives you a short DM version if people book from Instagram and you have no website.",
+        use="> /confirm-page a $4,000 3-month coaching program for personal trainers, calls booked from Instagram DMs\n\nClaude asks for your offer, your call, your real proof and the doubts you hear, all in one message. Then it writes the finished page and the DM version. It never makes up a result or a review.",
+    ),
+    "revive": dict(
+        title="Revive Skill",
+        pitch="Don't send \"just following up\". Paste the chat where a lead went quiet, and Claude works out where they stopped and why. Then it writes 2 or 3 messages in your voice, tells you when to send each, and gives you a short follow-up plan with a clear point to stop.",
+        use="> /revive\n\nThen paste the DM chat with the lead who went quiet, for example after you sent the price 4 days ago. You get the stage, the likely reason, 2 or 3 messages with send times, and a 3 to 5 touch plan.",
+    ),
+    "lead-heat": dict(
+        title="Lead Heat Skill",
+        pitch="Some leads are ready to buy, some are just looking. Paste your DM chats and Claude scores how warm and how good a fit each lead is, sorts them into hot, warm, cold or wrong fit, and writes the next message to send. Booked calls also get a 5-line brief for your closer.",
+        use="> /lead-heat a $3,000 12-week coaching program for new gym owners\n\nClaude asks once for your price and your ideal client, then you paste your DM chats. It scores each lead, sorts them and writes the next message for each.",
+    ),
+    "call-prep": dict(
+        title="Call Prep Skill",
+        pitch="What if your lead had all their questions answered before the sales call? This skill plans everything they see between booking and the call. It maps each doubt to the content that answers it, writes the scripts for the pieces you are missing and the DMs that deliver them, and sets up simple retargeting if you run ads.",
+        use="> /call-prep a $3,000 coaching program for new gym owners, calls booked from Instagram DMs\n\nClaude asks for your top buyer doubts and the content you already have, in one message. Then it builds the call prep map, 3 to 5 scripts and the DM messages.",
+    ),
+    "show-up": dict(
+        title="Show Up Skill",
+        pitch="Half your booked calls don't show up? Claude writes the messages that go out between booking and the call, so more people show. It picks the timing from how far ahead the call was booked, then writes every reminder in your voice: short, with a reason to show up and an easy way to reschedule instead of ghosting.",
+        use="> /show-up a 30 minute strategy call for fitness coaches, booked 2 to 4 days ahead, I use email and Instagram DM\n\nYou get the timing table and every reminder written in full, plus a reply for \"can't make it\" and one message after a no-show.",
+    ),
 }
 
 TEMPLATE = """---
@@ -104,6 +129,11 @@ USE_SHORT = {
     "captions": "type `/captions` and the path to their video",
     "llm-wiki": "type `/llm-wiki`",
     "presell-audit": "type `/presell-audit` and paste in their posts",
+    "confirm-page": "type `/confirm-page` and their offer",
+    "revive": "type `/revive` and paste the chat with the lead who went quiet",
+    "lead-heat": "type `/lead-heat` and their offer, then paste their DM chats",
+    "call-prep": "type `/call-prep` and their offer",
+    "show-up": "type `/show-up` and their offer, how far ahead calls are booked, and their channels",
 }
 
 for name, s in SKILLS.items():
