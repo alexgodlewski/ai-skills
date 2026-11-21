@@ -45,6 +45,7 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [outreach-numbers](guides/outreach-numbers) | The sheet to track every outreach number (Excel and CSV) and what each one tells you to fix |
 | [claude-weekend](guides/claude-weekend) | One weekend, five steps to use Claude better than most people, with the 50 About Me questions (PDF) |
 | [reel-machine](guides/reel-machine) | How Claude makes and schedules ten reels a day, with the exact prompts |
+| [sales-iq](guides/sales-iq) | Test your sales IQ: 16 sales moves in 4 levels, each with the exact DM to send (PDF) |
 
 ## How to install
 
