@@ -55,6 +55,11 @@ SKILLS = {
         pitch="Your lead books a call, then looks you up. This skill builds the page they land on, so they show up ready to buy. It writes the full page copy and layout, the proof sections with slots for your real proof, and the videos to record with a script outline for each. It also gives you a short DM version if people book from Instagram and you have no website.",
         use="> /confirm-page a $4,000 3-month coaching program for personal trainers, calls booked from Instagram DMs\n\nClaude asks for your offer, your call, your real proof and the doubts you hear, all in one message. Then it writes the finished page and the DM version. It never makes up a result or a review.",
     ),
+    "sort-no": dict(
+        title="Sort No Skill",
+        pitch="Find out why people say no, and what to write back. Take the last hundred people who said no in your DMs, drop them into Claude and type `/sort-no`. It takes the names out, puts every no into one of six piles (Busy, Later, Price, Fear, Trust, Real), shows your biggest pile, writes one answer for each pile in your own words, and says which pile costs you the most calls. It never sends anything.",
+        use="> /sort-no\n\nThen paste your last 50 to 100 no's (one line for each person), your offer, and five messages you wrote, so the answers sound like you.",
+    ),
     "revive": dict(
         title="Revive Skill",
         pitch="Don't send \"just following up\". Paste the chat where a lead went quiet, and Claude works out where they stopped and why. Then it writes 2 or 3 messages in your voice, tells you when to send each, and gives you a short follow-up plan with a clear point to stop.",
@@ -133,6 +138,7 @@ USE_SHORT = {
     "revive": "type `/revive` and paste the chat with the lead who went quiet",
     "lead-heat": "type `/lead-heat` and their offer, then paste their DM chats",
     "call-prep": "type `/call-prep` and their offer",
+    "sort-no": "type `/sort-no` and paste their no's",
     "show-up": "type `/show-up` and their offer, how far ahead calls are booked, and their channels",
 }
 

@@ -31,6 +31,7 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [mirror](claude/mirror) | Claude reads your Gmail, calendar and chats (through Beeper), builds a file on every person and how you write to them, and every morning tells you who you owe a reply to with a draft for each. It never sends: you check each one and press send | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/mirror-skill.md) |
 | [call-prep](claude/call-prep) | Plans what a lead sees between booking and the sales call: a doubt-by-doubt content map, the missing scripts, the DMs that deliver them and simple retargeting | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/call-prep-skill.md) |
 | [show-up](claude/show-up) | Writes the reminders between booking and the call (timing from how far ahead they booked), each with a reason to show up and an easy way to reschedule | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/show-up-skill.md) |
+| [sort-no](claude/sort-no) | Type `/sort-no` and paste your last 100 no's: Claude takes the names out, sorts every no into six piles (Busy, Later, Price, Fear, Trust, Real), writes one answer for each pile in your own words and says which pile costs you the most calls. It never sends anything | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/sort-no-skill.md) |
 | [watch-me-work](claude/watch-me-work) | Record your screen while you do a task once and talk through it like you are showing a new hire. Drop the video into Claude Code: it watches every step, hears why you do it, and writes the skill, so next time you type one word | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/watch-me-work-skill.md) |
 
 ### For ChatGPT
@@ -49,6 +50,15 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [outreach-numbers](guides/outreach-numbers) | The sheet to track every outreach number (Excel and CSV) and what each one tells you to fix |
 | [claude-weekend](guides/claude-weekend) | One weekend, five steps to use Claude better than most people, with the 50 About Me questions (PDF) |
 | [reel-machine](guides/reel-machine) | How Claude makes and schedules ten reels a day, with the exact prompts |
+| [no-map](guides/no-map) | The No Map: six kinds of no, and what to write back to each one (PDF) |
+| [show-up-messages](guides/show-up-messages) | Three messages that go out before a sales call, so people show up (PDF) |
+| [two-doors](guides/two-doors) | The 2 door setup: one question and two pages that teach Meta who can pay (PDF) |
+| [claims-check](guides/claims-check) | The list to check your ads and your page with, with the FTC sources (PDF) |
+| [second-message](guides/second-message) | Three follow ups you can copy when a lead goes quiet (PDF) |
+| [which-reel](guides/which-reel) | How to see the post a client came from, and count calls and cash next to it (PDF) |
+| [steps-sheet](guides/steps-sheet) | Your five numbers from the ad to the sale: the sheet that shows which step is broken (Excel and PDF) |
+| [before-you-hire](guides/before-you-hire) | One page and three numbers to check before you hire a second setter (PDF) |
+| [ready-test](guides/ready-test) | Four questions before you buy an AI setter (PDF) |
 | [sales-iq](guides/sales-iq) | Test your sales IQ: 16 sales moves in 4 levels, each with the exact DM to send (PDF) |
 
 ## How to install
