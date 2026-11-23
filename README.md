@@ -33,6 +33,10 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [show-up](claude/show-up) | Writes the reminders between booking and the call (timing from how far ahead they booked), each with a reason to show up and an easy way to reschedule | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/show-up-skill.md) |
 | [sort-no](claude/sort-no) | Type `/sort-no` and paste your last 100 no's: Claude takes the names out, sorts every no into six piles (Busy, Later, Price, Fear, Trust, Real), writes one answer for each pile in your own words and says which pile costs you the most calls. It never sends anything | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/sort-no-skill.md) |
 | [watch-me-work](claude/watch-me-work) | Record your screen while you do a task once and talk through it like you are showing a new hire. Drop the video into Claude Code: it watches every step, hears why you do it, and writes the skill, so next time you type one word | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/watch-me-work-skill.md) |
+| [paper](claude/paper) | Type `/paper` on a scan or a whole folder of old invoices and quotes: your Mac reads them into text for free, then ask Claude anything and it answers with the file and page | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/paper-skill.md) |
+| [skill-thief](claude/skill-thief) | Type `/skill-thief` and the job you need done: Claude finds the best prompts people share in public for that task, tests the top two on your own example and rebuilds the winner as a skill with your business in it | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/skill-thief.md) |
+| [lookalike](claude/lookalike) | Type `/lookalike` and drop in your customer list: Customer Profiler, Lookalike Finder and Message Writer. Finds people on social media who talk like your best customers and drafts a first message in their own words. It never sends | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/lookalike-skill.md) |
+| [podcast-skill](claude/podcast-skill) | Paste a podcast episode or feed: Claude gets the words, learns what it teaches and turns it into a skill you keep, for example one that checks your sales calls the way the episode teaches | [Download file](https://github.com/alexgodlewski/ai-skills/releases/latest/download/podcast-skill.md) |
 
 ### For ChatGPT
 
@@ -60,6 +64,9 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [before-you-hire](guides/before-you-hire) | One page and three numbers to check before you hire a second setter (PDF) |
 | [ready-test](guides/ready-test) | Four questions before you buy an AI setter (PDF) |
 | [sales-iq](guides/sales-iq) | Test your sales IQ: 16 sales moves in 4 levels, each with the exact DM to send (PDF) |
+| [claude-setup](guides/claude-setup) | The 3 things to set up in Claude first: a real web search tool, your Gmail, Drive and Calendar, and the reverse prompting interview (PDF) |
+| [real-research](guides/real-research) | Why Claude makes things up when it searches, and the setup and prompt that make it open every page it uses (PDF) |
+| [rich-buyers](guides/rich-buyers) | Five changes for buyers with money from Meta ads, with the Claude prompt that rewrites your ad (PDF) |
 
 ## How to install
 

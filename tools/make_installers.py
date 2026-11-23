@@ -80,6 +80,26 @@ SKILLS = {
         pitch="Half your booked calls don't show up? Claude writes the messages that go out between booking and the call, so more people show. It picks the timing from how far ahead the call was booked, then writes every reminder in your voice: short, with a reason to show up and an easy way to reschedule instead of ghosting.",
         use="> /show-up a 30 minute strategy call for fitness coaches, booked 2 to 4 days ahead, I use email and Instagram DM\n\nYou get the timing table and every reminder written in full, plus a reply for \"can't make it\" and one message after a no-show.",
     ),
+    "paper": dict(
+        title="Paper Skill",
+        pitch="Any scanned document becomes text Claude can read. Type `/paper` and point it at a file or a folder of old invoices, quotes or letters. It reads them on your own computer (nothing goes to a cloud reading service), builds a searchable text copy and an index, and then answers your questions from the paper and tells you the file and page every answer came from. Handwriting and bad scans may read wrong.",
+        use="> /paper ~/Documents/old-invoices\n\nThen ask: What did we quote this customer in 2022? Which invoices this month never got paid? On a Mac it uses the text recognition built into macOS. It needs Apple's free Command Line Tools.",
+    ),
+    "skill-thief": dict(
+        title="Skill Thief",
+        pitch="Get the best prompt anyone has shared for one job, rebuilt as your own skill. Type `/skill-thief` and tell Claude the job: research my competitors, answer my customer emails, write my quotes. It searches public places where people share prompts and skills, scores what it finds, tests the best two on a real example of yours, and writes a new skill with your business in it, so Claude does that job the same way every time. It rebuilds in its own words and links every source.",
+        use="> /skill-thief\n\nClaude asks for the job, a few lines about your business and one real example. It needs a way to search the web. If it has none, you paste in links to prompts you like.",
+    ),
+    "lookalike": dict(
+        title="Lookalike Skill",
+        pitch="Find more people like your best customers. Type `/lookalike` and drop in your customer list. It reads what your customers post in public (pains, wants, their own words), finds other people on Instagram, TikTok, X, Reddit and LinkedIn who say the same things, ranks them, and writes a first message for each one from the words they used. Everything is saved as a draft. It never sends. Three tools in one skill: a customer profiler, a lookalike finder and a message writer.",
+        use="> /lookalike\n\nThen give it your customer list (a CSV or a pasted list of names, handles or websites). You bring a free Apify account and token (`APIFY_TOKEN`). Claude tests with 10 results and tells you the cost first. The matches are guesses: you check each one.",
+    ),
+    "podcast-skill": dict(
+        title="Podcast Skill",
+        pitch="Claude can listen to any episode and learn from it. Give it a YouTube link, an Apple Podcasts or Spotify episode, a podcast feed or an audio file link, or a whole list. It gets the words (captions when there are any, otherwise it turns the audio into text on your computer or with your own API key), learns the method the episode teaches, and saves it as a skill you keep.",
+        use="> Listen to this: [LINK]. Learn what it teaches and turn it into a skill I can use forever.\n\nThen use it: *Check my sales call against what this episode teaches.* Or: *Rewrite my offer the way this episode teaches.*",
+    ),
 }
 
 TEMPLATE = """---
@@ -139,15 +159,38 @@ USE_SHORT = {
     "lead-heat": "type `/lead-heat` and their offer, then paste their DM chats",
     "call-prep": "type `/call-prep` and their offer",
     "sort-no": "type `/sort-no` and paste their no's",
+    "paper": "type `/paper` and a file or folder of scans",
+    "skill-thief": "type `/skill-thief` and the job they want done",
+    "lookalike": "type `/lookalike` and give their customer list",
+    "podcast-skill": "paste a podcast or video link and say: listen to this, learn what it teaches, and turn it into a skill",
     "show-up": "type `/show-up` and their offer, how far ahead calls are booked, and their channels",
 }
+
+# helper files that go next to SKILL.md (same folder in the repo, same folder after install)
+EXTRA = {
+    "paper": [("paper_ocr.swift", "swift"), ("paper_index.py", "python")],
+    "podcast-skill": [("transcript.py", "python")],
+}
+# installer file name, when it is not <name>-skill.md
+OUTNAME = {"skill-thief": "skill-thief.md", "podcast-skill": "podcast-skill.md"}
 
 for name, s in SKILLS.items():
     d = ROOT / "claude" / name
     skill = (d / "SKILL.md").read_text().rstrip()
     out = TEMPLATE.format(name=name, skill=skill, use_short=USE_SHORT[name], **s)
     assert "{" + "{" not in out and "—" not in out and "–" not in out, f"{name}: template slot left or a dash"
+    if name in EXTRA:   # more files: change the wording from "one file" and add each file at the end
+        files = [f for f, _ in EXTRA[name]]
+        out = out.replace("write one file on their computer", f"write {len(files) + 1} files on their computer")
+        out = out.replace("and write the file below into it exactly as it is", "and write the files below into it exactly as they are")
+        out = out.replace("- `~/.claude/skills/" + name + "/SKILL.md`: the plain instructions below.", "- `~/.claude/skills/" + name + "/SKILL.md` and " + ", ".join(f"`{f}`" for f in files) + ": the plain instructions and the small helper files below.")
+        out = out.replace("### File: `~/.claude/skills/", "### File 1: `~/.claude/skills/")
+        for n, (f, lang) in enumerate(EXTRA[name], 2):
+            body = (d / f).read_text().rstrip()
+            out = out.rstrip("\n") + f"\n\n### File {n}: `~/.claude/skills/{name}/{f}`\n\n`````{lang}\n{body}\n`````\n"
+    assert "—" not in out and "–" not in out, f"{name}: a dash"
     blocks = re.findall(r"`````markdown\n(.*?)\n`````", out, re.S)
-    assert blocks == [skill], f"{name}: SKILL.md does not round-trip"
-    (d / f"{name}-skill.md").write_text(out)
-    print(f"claude/{name}/{name}-skill.md: {len(out)} chars, SKILL.md round-trip OK")
+    assert blocks[:1] == [skill], f"{name}: SKILL.md does not round-trip"
+    fname = OUTNAME.get(name, f"{name}-skill.md")
+    (d / fname).write_text(out)
+    print(f"claude/{name}/{fname}: {len(out)} chars, SKILL.md round-trip OK")
