@@ -67,6 +67,11 @@ Made by [Alex Godlewski](https://www.instagram.com/alexgodlewsky/). If one of th
 | [claude-setup](guides/claude-setup) | The 3 things to set up in Claude first: a real web search tool, your Gmail, Drive and Calendar, and the reverse prompting interview (PDF) |
 | [real-research](guides/real-research) | Why Claude makes things up when it searches, and the setup and prompt that make it open every page it uses (PDF) |
 | [rich-buyers](guides/rich-buyers) | Five changes for buyers with money from Meta ads, with the Claude prompt that rewrites your ad (PDF) |
+| [competitor-spy](guides/competitor-spy) | See how any company gets its customers: the free open source tool, the 4 steps and a prompt for your competitors' longest running ads |
+| [lead-magnet](guides/lead-magnet) | The two prompts that find what your buyers are stuck on and turn it into a free video that books calls, plus the DM to send it |
+| [client-map](guides/client-map) | The map of AI agents that take a coach from a new reel to a booked call, step by step, with what you need for each |
+| [ad-hooks](guides/ad-hooks) | 5 hooks for Facebook ads, with an example for each and the Claude prompt that fills them in for your offer |
+| [50-ad-hooks](guides/50-ad-hooks) | 50 ad hooks for coaches in the five types that still work, plus the prompt that makes them fit your business |
 
 ## How to install
 
